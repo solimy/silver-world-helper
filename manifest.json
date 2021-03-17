@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Silver World Helper",
+    "description": "Helping tools for silver-world.net",
+    "version": "1.0",
+    
+    "content_scripts": [{
+      "js": ["hook.js"],
+      "matches": ["https://silver-world.net/*"]
+    }]
+}
