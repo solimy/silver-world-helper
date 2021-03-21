@@ -1,0 +1,18 @@
+ul.silver-world-helper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    border-style: double;
+    background-color: white;
+    list-style-type: none;
+}
+
+li.silver-world-helper {
+    cursor: pointer;
+    border-style: outset;
+}
+
+li.silver-world-helper:active {
+    border-style: inset;
+}

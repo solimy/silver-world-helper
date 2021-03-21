@@ -1,14 +1,15 @@
-var root = document.createElement("ul");
-root.style = "position: absolute; top: 0px; left: 0px;"
+let root = document.createElement("ul");
+root.className = "silver-world-helper"
 enable_attack_button(root)
 enable_levelup_button(root)
 document.body.appendChild(root);
 
 
 function enable_attack_button(root) {
-    var btn = document.createElement("li");
+    let btn = document.createElement("li");
+    btn.className = "silver-world-helper"
     btn.innerHTML = "Attack";
-    btn.style = "color: red; background-color: white;"
+    btn.style = "color: red"
     btn.addEventListener("click", () => {
         try {
             document.evaluate(
@@ -28,9 +29,10 @@ function enable_attack_button(root) {
 
 
 function enable_levelup_button(root) {
-    var btn = document.createElement("li");
+    let btn = document.createElement("li");
+    btn.className = "silver-world-helper"
     btn.innerHTML = "Level up";
-    btn.style = "color: blue; background-color: white;"
+    btn.style = "color: blue"
     btn.addEventListener("click", () => {
         try {
             document.evaluate(

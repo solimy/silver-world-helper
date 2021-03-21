@@ -6,6 +6,7 @@
     "version": "1.0",
     
     "content_scripts": [{
+      "css": ["hook.css"],
       "js": ["hook.js"],
       "matches": ["https://silver-world.net/*"]
     }]
