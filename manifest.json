@@ -5,6 +5,7 @@
     "description": "Helping tools for silver-world.net",
     "version": "1.0",
     
+    "options_page": "options.html",
     "content_scripts": [{
       "css": ["hook.css"],
       "js": ["hook.js"],
