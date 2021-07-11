@@ -10,7 +10,7 @@ function enable_attack_button(root) {
     btn.className = "silver-world-helper"
     btn.innerHTML = "Attack";
     btn.style = "color: red"
-    btn.addEventListener("click", () => {
+    action = () => {
         try {
             document.evaluate(
                 '//img[@src="/site_elements/layout/fight/magic.png"]',
@@ -23,7 +23,13 @@ function enable_attack_button(root) {
             console.log(error)
             console.log('no monster found')
         }
-    })
+    }
+    btn.addEventListener("click", action)
+    document.addEventListener('keypress', (event) => {
+        if (event.code == "KeyK") {
+            action()
+        }
+    }, false);
     root.appendChild(btn);
 }
 
@@ -33,7 +39,7 @@ function enable_levelup_button(root) {
     btn.className = "silver-world-helper"
     btn.innerHTML = "Level up";
     btn.style = "color: blue"
-    btn.addEventListener("click", () => {
+    action = () => {
         try {
             document.evaluate(
                 '//input[@name="constitution"]',
@@ -67,6 +73,12 @@ function enable_levelup_button(root) {
             console.log(error)
             console.log('You can\'t level up at the moment')
         }
-    })
+    }
+    btn.addEventListener("click", action)
+    document.addEventListener('keypress', (event) => {
+        if (event.code == "KeyL") {
+            action()
+        }
+    }, false);
     root.appendChild(btn);
 }
