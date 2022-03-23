@@ -10,5 +10,8 @@
       "css": ["hook.css"],
       "js": ["hook.js"],
       "matches": ["https://silver-world.net/*"]
-    }]
+    }],
+    "permissions": [
+      "storage"
+    ]
 }
